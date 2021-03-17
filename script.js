@@ -23,7 +23,7 @@ const calc = function () {
   console.log(totalIncome);
   console.log(incomeInput.value);
   if (withdrawAmt > 0 && withdrawAmt <= maxStipend) {
-    calcResult.innerHTML = `Stipendet ditt vil bli redusert med <span>${withdrawAmtRound.toLocaleString()},-</span>.<br>Inntekten din vil være <span>${totalIncomeRound.toLocaleString()},-</span> totalt, hvorav <span>${totalStipendRound.toLocaleString()},-</span> vil være stipend.`;
+    calcResult.innerHTML = `Stipendet ditt vil bli redusert med <span>${withdrawAmtRound.toLocaleString()},-</span>.<br>Inntekten din vil være <span>${totalIncomeRound.toLocaleString()},-</span> totalt,<br>hvorav <span>${totalStipendRound.toLocaleString()},-</span> vil være stipend.`;
   } else if (withdrawAmt <= 0) {
     calcResult.innerHTML = `Stipendet ditt vil ikke bli redusert!`;
   } else if (withdrawAmt > maxStipend) {
@@ -44,13 +44,20 @@ const colorize = function (e) {
   let iVal = parseInt(incomeInput.value);
   if (iVal <= maxIncome && iVal > 0) {
     incomeInput.classList.add("green");
+    incomeInput.classList.remove("orange");
     incomeInput.classList.remove("red");
-  } else if (iVal > maxIncome) {
+  } else if (iVal > maxIncome && iVal <= 289406) {
+    incomeInput.classList.add("orange");
+    incomeInput.classList.remove("green");
+    incomeInput.classList.remove("red");
+  } else if (iVal > 289406) {
+    incomeInput.classList.remove("orange");
+    incomeInput.classList.remove("green");
     incomeInput.classList.add("red");
-    incomeInput.classList.remove("green");
   } else {
-    incomeInput.classList.remove("red");
+    incomeInput.classList.remove("orange");
     incomeInput.classList.remove("green");
+    incomeInput.classList.remove("red");
   }
 };
 

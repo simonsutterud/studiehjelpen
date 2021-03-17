@@ -65,6 +65,11 @@ nav a:hover {
   font-weight: 800;
 }
 
+.calc-header-container h1 span {
+  text-decoration: underline;
+  font-weight: 800;
+}
+
 .calc-container {
   width: 100vw;
   display: flex;
@@ -126,7 +131,7 @@ input[type="number"] {
   color: white;
   background-color: rgb(58, 22, 109);
   margin: 20px 135px;
-  height: 50px;
+  height: 45px;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -148,7 +153,7 @@ input[type="number"] {
   color: black;
   font-size: 1rem;
   line-height: 30px;
-  margin: 20px;
+  margin: 15px;
 }
 
 .calc-result span {
@@ -160,7 +165,11 @@ input[type="number"] {
 }
 
 .red {
-  color: darkred;
+  color: rgb(214, 0, 0);
+}
+
+.orange {
+  color: darkorange;
 }
 
 .show-modal {
@@ -191,6 +200,7 @@ input[type="number"] {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
   z-index: 5;
+  animation: fade-in 0.2s ease-in;
 }
 
 .modal {
@@ -205,6 +215,7 @@ input[type="number"] {
   color: black;
   z-index: 10;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  animation: fade-in 0.2s ease-in;
 }
 
 .modal-content {
@@ -228,4 +239,13 @@ input[type="number"] {
 .fa-question-circle:hover {
   color: #000;
   cursor: pointer;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
