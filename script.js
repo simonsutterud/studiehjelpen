@@ -20,7 +20,7 @@ const calc = function () {
   console.log(incomeInput.value);
   if (withdrawAmt > 0 && withdrawAmt <= maxStipend) {
     calcResult.innerHTML = `Stipendet ditt vil bli redusert med <span>${withdrawAmtRound.toLocaleString()},-</span>.<br>Inntekten din vil være <span>${totalIncomeRound.toLocaleString()},-</span> totalt, hvorav <span>${totalStipendRound.toLocaleString()},-</span> vil være stipend.`;
-  } else if (withdrawAmt < 0) {
+  } else if (withdrawAmt <= 0) {
     calcResult.innerHTML = `Stipendet ditt vil ikke bli redusert!`;
   } else if (withdrawAmt > maxStipend) {
     calcResult.innerHTML = `Du vil miste hele stipendet ditt (<span>${maxStipend.toLocaleString()},-</span>).`;
