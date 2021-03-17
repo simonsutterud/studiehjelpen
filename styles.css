@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(120deg, rgb(155, 27, 72), rgb(89, 5, 106));
+  color: white;
+}
+
+nav {
+  position: absolute;
+  border-bottom: 1px solid black;
+}
+
+nav ul {
+  display: flex;
+  width: 100vw;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 10px 0px;
+}
+
+nav .name {
+  position: absolute;
+  margin: 40px 50px;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+nav li {
+  margin: 30px 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+.calc-header-container {
+  display: flex;
+  flex-direction: column;
+  height: 45vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc-header-container h1 {
+  font-size: 5rem;
+  margin: 25px;
+}
+
+.calc-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+}
+
+.calc-wrapper {
+  margin-top: -10px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  height: 400px;
+  background: white;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.calc-wrapper h1 {
+  color: #222;
+  margin-top: 40px;
+}
+
+.income {
+  margin: 20px 100px;
+  margin-top: 50px;
+  font-size: 2rem;
+  height: 35px;
+  text-align: center;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+
+.income::-webkit-input-placeholder {
+  font-size: 1rem;
+}
+
+/* Remove number input arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.calculate {
+  color: white;
+  background-color: rgb(126, 33, 84);
+  margin: 20px 135px;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.calculate:hover {
+  background-color: white;
+  color: rgb(110, 27, 72);
+  font-weight: 800;
+}
+
+.calculate:active {
+  transform: scale(0.95);
+}
+
+.calc-result {
+  color: black;
+  font-size: 1rem;
+  line-height: 30px;
+  margin: 20px;
+}
+
+.calc-result span {
+  font-weight: 700;
+}
+
+.green {
+  color: darkgreen;
+}
+
+.red {
+  color: darkred;
+}
