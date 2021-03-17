@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Stipend-kalkulator</title>
+  </head>
+  <nav>
+      <a class="name"href="#">Studiehjelpen</a>
+    <ul>
+      <li><a href="#">Hjem<a /></li>
+      <li><a href="#">Om tjenesten<a /></li>
+      <li><a href="#">Stipend-kalkulator<a /></li>
+
+    </ul>
+  </nav>
+  <body>
+    <div class="calc-header-container">
+      <h1>Stipend-kalkulatoren.</h1>
+      <h2>Her kan du sjekke hvordan inntekten din påvirker stipendet ditt.</h2>
+    </div>
+    <div class="calc-container">
+      <div class="calc-wrapper">
+        <h1>Din inntekt før skatt:</h1>
+        <input
+          type="number"
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          class="income"
+          maxlength="7"
+        />
+        <button type="submit" class="calculate">Beregn</button>
+        <div class="calc-result-container">
+          <p class="calc-result"></p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
