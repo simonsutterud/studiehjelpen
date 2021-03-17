@@ -32,6 +32,10 @@ nav .name {
   text-decoration: underline;
 }
 
+nav .name:hover {
+  color: #fff;
+}
+
 nav li {
   margin: 30px 50px;
 }
@@ -39,11 +43,11 @@ nav li {
 nav a {
   text-decoration: none;
   color: white;
-  cursor: pointer;
 }
 
 nav a:hover {
   color: #ccc;
+  cursor: pointer;
 }
 
 .calc-header-container {
