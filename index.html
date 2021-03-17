@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <title>Stipend-kalkulator</title>
   </head>
   <nav>
@@ -22,11 +23,17 @@
   </nav>
   <body>
     <div class="calc-header-container">
-      <h1>Stipend-kalkulatoren.</h1>
+      <h1>Stipend-kalkulatoren</h1>
       <h2>Her kan du sjekke hvordan inntekten din påvirker stipendet ditt.</h2>
     </div>
     <div class="calc-container">
       <div class="calc-wrapper">
+        <i class="fas fa-question-circle"></i>
+        <div class="modal hidden"><div class="modal-content">
+          
+          <button class="close-modal">&times;</button>
+          <h1>Hva er dette?</h1><br><p>Stipendet ditt blir gradvis redusert hvis du tjener over inntektsgrensen. Det påvirker ikke hvor mye du får utbetalt hver måned, men hvor mye av lånet ditt som kan bli stipend og hvor mye du får beholde av andre stipender. (Hentet fra Lånekassen) </p><br><br>
+        <h2>Hvordan fungerer kalkulatoren?</h2><br><p>Den tar utgangspunkt i dette regnestykket:<br><br><span>(Din inntekt – 195 295) * 0.05 * 10.5</span><br><br>Da får du hvor mye som blir trukket fra maksstipendedet.</p></div></div>
         <h1>Din inntekt før skatt:</h1>
         <input
           type="number"
@@ -40,6 +47,7 @@
         </div>
       </div>
     </div>
+    <div class="overlay hidden"></div>
     <script src="script.js"></script>
   </body>
 </html>
