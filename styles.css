@@ -185,6 +185,7 @@ input[type="number"] {
   cursor: pointer;
   border: none;
   background: none;
+  outline: none;
 }
 
 .hidden {
