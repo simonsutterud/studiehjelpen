@@ -38,7 +38,7 @@ const colorize = function (e) {
   console.log(e);
   console.log(incomeInput.value);
   let iVal = incomeInput.value;
-  if (iVal < maxIncome && iVal > 0) {
+  if (iVal <= maxIncome && iVal > 0) {
     incomeInput.classList.add("green");
     incomeInput.classList.remove("red");
   } else if (iVal > maxIncome) {
