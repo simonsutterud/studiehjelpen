@@ -161,7 +161,7 @@ input[type="number"] {
 }
 
 .green {
-  color: darkgreen;
+  color: rgb(0, 143, 0);
 }
 
 .red {
@@ -169,7 +169,7 @@ input[type="number"] {
 }
 
 .orange {
-  color: darkorange;
+  color: rgb(233, 128, 0);
 }
 
 .show-modal {
