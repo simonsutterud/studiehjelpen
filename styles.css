@@ -8,7 +8,8 @@
 body {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(120deg, rgb(155, 27, 72), rgb(89, 5, 106));
+  /*background: linear-gradient(120deg, rgb(155, 27, 72), rgb(89, 5, 106));*/
+  background: #222629;
   color: white;
 }
 
@@ -42,7 +43,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: #86c232;
 }
 
 nav a:hover {
@@ -60,9 +61,13 @@ nav a:hover {
 
 .calc-header-container h1 {
   text-align: center;
-  font-size: 5rem;
+  font-size: 3rem;
   margin: 30px;
-  font-weight: 800;
+  font-weight: 400;
+}
+.calc-header-container h2 {
+  text-align: center;
+  color: #6b6e70;
 }
 
 .calc-header-container h1 span {
@@ -128,20 +133,20 @@ input[type="number"] {
 }
 
 .calculate {
-  color: white;
-  background-color: rgb(58, 22, 109);
+  color: #86c232;
+  background: #222629;
   margin: 20px 135px;
   height: 45px;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 1.3rem;
-  font-weight: 5´400;
+  font-weight: 800;
 }
 
 .calculate:hover {
-  background-color: white;
-  color: rgb(62, 15, 89);
+  background: #86c232;
+  color: #222629;
   font-weight: 800;
 }
 
@@ -216,7 +221,7 @@ input[type="number"] {
   color: black;
   z-index: 10;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-  animation: fade-in 0.2s ease-in;
+  animation: fade-in 0.1s ease-in;
 }
 
 .modal-content {
