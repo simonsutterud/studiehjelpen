@@ -31,6 +31,7 @@ nav .name {
   margin: 40px 50px;
   font-weight: 800;
   text-decoration: underline;
+  color: #fff;
 }
 
 nav .name:hover {
@@ -133,8 +134,8 @@ input[type="number"] {
 }
 
 .calculate {
-  color: #86c232;
-  background: #222629;
+  color: #222629;
+  background: #86c232;
   margin: 20px 135px;
   height: 45px;
   border-radius: 5px;
@@ -142,16 +143,20 @@ input[type="number"] {
   transition: all 0.2s ease-in-out;
   font-size: 1.3rem;
   font-weight: 800;
+  outline: none;
+  border: none;
 }
 
 .calculate:hover {
-  background: #86c232;
-  color: #222629;
+  background: #222629;
+  color: #86c232;
   font-weight: 800;
 }
 
 .calculate:active {
-  transform: scale(0.95);
+  color: #669426;
+  background: #101113;
+  transform: scale(1);
 }
 
 .calc-result {
@@ -177,7 +182,7 @@ input[type="number"] {
 
 .orange {
   /*color: rgb(233, 128, 0);*/
-  color: #ce6c21;
+  color: #ce7521;
 }
 
 .show-modal {
